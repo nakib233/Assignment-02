@@ -1,0 +1,53 @@
+/* Things which are common */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  gap: 500px;
+}
+.navlinks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+}
+li:nth-child(3) {
+  color: rgba(137, 135, 161, 1);
+}
+.navlinks li {
+  list-style: none;
+}
+.navlinks a {
+  text-decoration: none;
+  color: black;
+}
+.navHome {
+  color: rgba(37, 36, 50, 1);
+}
+
+.navlink .fade {
+  color: #8987a1;
+}
+
+/* For Iphone 14 & 15 Pro Max */
+@media screen and (max-width: 430px) {
+  .navlinks :nth-child(1),
+  .navlinks:nth-child(2),
+  .navlinks:nth-child(3) {
+    display: none;
+  }
+}
