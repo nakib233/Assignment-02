@@ -24,6 +24,7 @@
 }
 .common-fade-color {
   color: #8987a1;
+  font-size: 22px;
 }
 /* Universal Selector */
 * {
@@ -131,30 +132,108 @@ li:nth-child(3) {
   font-weight: 500;
 }
 
-/* Join Section styles */
-.join-section-left {
+/* Plants-Lover-Section */
+.Plants-Lover-Section {
+  display: flex;
+  margin-top: 200px;
+}
+.Plants-Lover-Section-left {
   height: 600px;
   display: block;
+  position: relative;
+  margin-right: 40px;
 }
-.join-section-left img {
+.Plants-Lover-Section-left img {
   height: fit-content;
 }
-.Join-section {
-  display: flex;
+
+.Plants-Lover-Section-left .badge {
+  height: 286px;
+  width: 286px;
+  position: absolute;
+  left: 96%;
+  top: 3%;
+  transform: translate(-50%, -50%);
 }
-.join-section-right {
+.Plants-Lover-Section-right {
   align-items: center;
   margin: 40px;
 }
-.join-section-right-container {
+.Plants-Lover-Section-right-container {
   margin: 38px 0 38px 60px;
   width: 540px;
 }
-.join-section-right-container h1 {
+.Plants-Lover-Section-right-container h1 {
   font-weight: bold;
   font-size: 50px;
 }
 
+/* Join Section */
+.joint {
+  max-width: 1440px;
+}
+.bg-pic {
+  background-image: url(assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1440px;
+  height: 530px;
+  margin: 0px auto;
+}
+.join {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+.email-btn {
+  display: flex;
+  height: 50px;
+  margin-top: 30px;
+}
+.input-section {
+  padding: 15px 500px 15px 15px;
+  border: none;
+  display: block;
+}
+.suscribe {
+  padding: 15px 53px;
+  background-color: #e95a08;
+  color: white;
+  border: none;
+  margin-left: 0px;
+  display: block;
+}
+/* Footer Section */
+.Footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 110px;
+}
+.left-part-des {
+  margin-top: 16px;
+  color: #8987a1;
+  font-size: 22px;
+  font-weight: 600;
+  width: 360px;
+}
+.middle-list-part1 ul li,
+.middle-list-part2 ul li {
+  line-height: 60px;
+  list-style: none;
+  color: #8987a1;
+}
+.right-part-logo {
+  width: 300px;
+}
+.right-part-logo img {
+  margin-left: 35px;
+}
+.right-part-logo .weird {
+  margin-bottom: 10px;
+}
 /* For Iphone 14 & 15 Pro Max */
 @media screen and (max-width: 536px) {
   .flower-cards-container {
