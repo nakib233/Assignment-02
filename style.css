@@ -1,10 +1,31 @@
+/* Font styles */
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* font Section */
+.fresh {
+  font-weight: bold;
+  font-size: 65px;
+}
 /* Things which are common */
 .container {
   max-width: 1140px;
   margin: 0 auto;
   margin-bottom: 120px;
 }
-
+.common-orange-color {
+  color: #e95a08;
+}
 /* Universal Selector */
 * {
   box-sizing: border-box;
@@ -41,6 +62,21 @@ li:nth-child(3) {
 
 .navlink .fade {
   color: #8987a1;
+}
+
+/* Banner Styles */
+.banner-container {
+  display: flex;
+  align-items: center;
+  height: 461px;
+}
+.banner-container .banner-left p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+}
+.banner-left {
+  display: block;
+  margin-top: 85px;
 }
 
 /* For Iphone 14 & 15 Pro Max */

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Flowers</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Icon part -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -12,11 +13,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- font- Noto Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <section class="navbar-container">
+      <section class="navbar-container container">
         <div class="logo">
           <img src="assets/logo.png" alt="Logo" />
         </div>
@@ -33,7 +41,24 @@
           </ul>
         </div>
       </section>
-      <section class="banner"></section>
+      <section class="banner-container container">
+        <div class="banner-left">
+          <h1 class="fresh noto-serif-normal">
+            ALWAYS <span class="common-orange-color">FRESH</span><br /><span
+              class="common-orange-color"
+              >FLOWERS</span
+            >
+          </h1>
+          <p class="inter-normal">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+        <div class="banner-right">
+          <img src="assets/hero-flower.png" alt="" />
+        </div>
+      </section>
     </header>
   </body>
 </html>
