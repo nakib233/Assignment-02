@@ -12,11 +12,7 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-/* font Section */
-.fresh {
-  font-weight: bold;
-  font-size: 65px;
-}
+
 /* Things which are common */
 .container {
   max-width: 1140px;
@@ -26,8 +22,12 @@
 .common-orange-color {
   color: #e95a08;
 }
+.common-fade-color {
+  color: #8987a1;
+}
 /* Universal Selector */
 * {
+  font-family: "Noto Serif", serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -78,12 +78,86 @@ li:nth-child(3) {
   display: block;
   margin-top: 85px;
 }
+.banner-left p {
+  width: 90%;
+}
+.fresh {
+  font-weight: bold;
+  font-size: 65px;
+}
+/* Plant Section */
+
+.plants .title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.plants .sub-title {
+  font-size: 22px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 49px;
+  margin-bottom: 16px;
+}
+
+.flower-card {
+  max-width: 270px;
+  text-align: center;
+}
+.flower-card img {
+  width: 100%;
+}
+.card-bottom {
+  line-height: 30px;
+}
+.flower-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+.card-button {
+  background-color: #e95a08;
+  padding: 20px 80px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  margin-top: 30px;
+}
+
+.flower-cards-container .flower-card h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* Join Section styles */
+.join-section-left {
+  height: 600px;
+  display: block;
+}
+.join-section-left img {
+  height: fit-content;
+}
+.Join-section {
+  display: flex;
+}
+.join-section-right {
+  align-items: center;
+  margin: 40px;
+}
+.join-section-right-container {
+  margin: 38px 0 38px 60px;
+  width: 540px;
+}
+.join-section-right-container h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
 
 /* For Iphone 14 & 15 Pro Max */
-@media screen and (max-width: 430px) {
-  .navlinks :nth-child(1),
-  .navlinks:nth-child(2),
-  .navlinks:nth-child(3) {
-    display: none;
+@media screen and (max-width: 536px) {
+  .flower-cards-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
