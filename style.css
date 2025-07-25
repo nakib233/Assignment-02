@@ -39,6 +39,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   margin-top: 30px;
   gap: 500px;
 }
@@ -167,6 +168,85 @@ li:nth-child(3) {
   font-weight: bold;
   font-size: 50px;
 }
+/* Plant Lover Section */
+.headings {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+.deal-heading-bottom {
+  font-size: 22px;
+  font-weight: 500;
+  color: #8987a1;
+  text-align: center;
+  margin-top: 16px;
+}
+.dealing-container {
+  height: 400px;
+  margin-top: 120px;
+  display: flex;
+  max-width: 1140px;
+  justify-content: space-between;
+}
+.dealing-left {
+  height: 367px;
+  width: 25%;
+}
+
+.pic1 {
+  background: linear-gradient(rgba(123, 61, 61, 0.3), rgba(97, 66, 66, 0.3)),
+    url(assets/deal-bloom.png) no-repeat;
+  width: 366px;
+  height: 190px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.bloom {
+  width: 270px;
+  color: white;
+}
+
+.pic2 {
+  background: linear-gradient(rgba(123, 61, 61, 0.3), rgba(97, 66, 66, 0.3)),
+    url(assets/deal-ana.png) no-repeat;
+  width: 366px;
+  height: 190px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ana {
+  width: 270px;
+  color: white;
+}
+.dealing-right {
+  background: linear-gradient(rgba(123, 61, 61, 0.3), rgba(97, 66, 66, 0.3)),
+    url(assets/deal-zabo.png) no-repeat;
+  width: 753px;
+  height: 410px;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.zabo h4 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+.zabo span u {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
 
 /* Join Section */
 .joint {
@@ -207,6 +287,7 @@ li:nth-child(3) {
   display: block;
 }
 /* Footer Section */
+
 .Footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -236,7 +317,33 @@ li:nth-child(3) {
 }
 /* For Iphone 14 & 15 Pro Max */
 @media screen and (max-width: 536px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+  /* .navlinks :nth-child(1),
+  .navlinks :nth-child(2) {
+    display: none;
+  } */
+  .banner-container {
+    margin-top: 120px;
+    flex-direction: column-reverse;
+  }
   .flower-cards-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .Footer-container {
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+    gap: 0px;
+  }
+  .Plants-Lover-Section {
+    flex-direction: column;
+  }
+  .Plants-Lover-Section-left img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .badge {
+    display: none;
   }
 }
