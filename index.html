@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Tailwind CSS linking -->
+         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    
     <title>Responsive Flowers</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Icon part -->
+   <!-- Icon part -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -32,9 +36,9 @@
         <div>
           <ul class="navlinks">
             <li class="navlink"><a class="navHome" href="#">Home</a></li>
-            <li class="navlink"><a class="fade" href="#">Shop</a></li>
-            <li class="navlink"><a class="fade" href="#">About Us</a></li>
-            <li class="navlink">
+            <li class="navlink"><a class="fade shop" href="#">Shop</a></li>
+            <li class="navlink"><a class="fade about-us" href="#">About Us</a></li>
+            <li class="navlink cart">
               <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart($56)</a>
             </li>
           </ul>
@@ -71,7 +75,7 @@
           shop. From <br />
           classic roses to exotic blooms, we offer a wide variety of fresh.
         </p>
-        <div class="flower-cards-container">
+        <div class="md:grid-cols-2 flower-cards-container">
           <div class="flower-card">
             <img src="assets/sample-flower-image.png" alt="" />
             <div class="card-bottom">
@@ -148,25 +152,27 @@
           <div class="Plants-Lover-Section-right-container">
             <h1>Flower & Plants <br />Lover</h1>
             <br />
+            <div class="brief-description">
             <ul>
               <li class="common-fade-color">
-                Indulge your senses with the beauty and fragrance of our fresh
+                •  Indulge your senses with the beauty and fragrance of our fresh
                 flower shop. From classic roses to exotic blooms, we offer a
                 wide variety of fresh.
               </li>
               <br />
               <li class="common-fade-color">
-                Indulge your senses with the beauty and fragrance of our fresh
+                •  Indulge your senses with the beauty and fragrance of our fresh
                 flower shop. From classic roses to exotic blooms, we offer a
                 wide variety of fresh.
               </li>
               <br />
               <li class="common-fade-color">
-                Indulge your senses with the beauty and fragrance of our fresh
+                •  Indulge your senses with the beauty and fragrance of our fresh
                 flower shop. From classic roses to exotic blooms, we offer a
                 wide variety of fresh.
               </li>
             </ul>
+            </div>
           </div>
         </div>
       </section>
